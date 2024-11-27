@@ -5,9 +5,10 @@
         <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
-        <p>Um elemento com position: relative;é posicionado em relação à sua posição normal.</p>
+        <p>Um elemento position: absolute;é posicionado em relação ao ancestral posicionado mais próximo (em vez de posicionado em relação à janela de visualização, como fixo).</p>
 
-        <p>Definir as propriedades top, right, bottom e left de um elemento posicionado relativamente fará com que ele seja ajustado para longe de sua posição normal. Outros conteúdos não serão ajustados para caber em nenhuma lacuna deixada pelo elemento.</p>
+        <p>Entretanto, se um elemento posicionado de forma absoluta não tiver ancestrais posicionados, ele usará o corpo do documento e se moverá junto com a rolagem da página.</p>
+        <p>Observação: elementos posicionados de forma absoluta são removidos do fluxo normal e podem sobrepor elementos.</p>
 
         <div class="relativo">Elemento Relativo
             <div class="absoluto"></div>

@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+.centro  {
+    border: 3px solid red;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    margin: -3px 0 0 -3px;
+}
+.y {
+    left: 50%;
+}
+.x {
+    top: 50%;
+}
+
+.banner {
+    border: 3px solid blue;
+    height: 200px;
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -103px;
+    margin-left: -153px;
+}
