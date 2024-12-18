@@ -20,13 +20,13 @@ body {
 .cabecalho ul {
     list-style: none;
     margin: 0;
-    padding: 0 0 0 40px;
+    padding-left: 40px;
     float: left;
 }
 
 .cabecalho ul li {
     display: inline;
-    margin-right: 10px;
+    float: left;
 }
 .cabecalho ul li a {
     color: white;
@@ -35,7 +35,6 @@ body {
     font-size: 18px;
     font-weight: bold;
     display: block;
-    float: left;
     padding: 0 20px;
 }
 .cabecalho ul li a:hover {
@@ -44,8 +43,10 @@ body {
 }
 
 .banner {
-    height: 30%;
-    width: 100%;
-    background: url(../images/banner.png) no-repeat center;
+    height: 30vh;
+    width: 100vw;
+    background: url(../images/banner.png) no-repeat;
+    background-position: center;
     background-size: cover;
 }
+
