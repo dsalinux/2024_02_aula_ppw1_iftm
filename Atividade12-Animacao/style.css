@@ -1,0 +1,21 @@
+.bola {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    animation: quicar 2s infinite;
+}
+
+@keyframes quicar {
+    0%{
+        top: 0;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 0;
+    }
+}

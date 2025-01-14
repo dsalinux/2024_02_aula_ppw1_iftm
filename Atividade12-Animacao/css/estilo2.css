@@ -1,0 +1,67 @@
+:root {
+    --duracao: 0.4s;
+}
+.bola {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: fixed;
+}
+.alca {
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: calc(50% - 15px);
+    left: calc(50% + 30px);
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+}
+.bola1 {
+    top: calc(50% - 308px);
+    left: 50%;
+    animation: bola1 var(--duracao) linear infinite alternate;
+    transform-origin: 50px 308px;
+}
+.bola1::after {
+    content: '';
+    display: block;
+    height: 200px;
+    width: 1px;
+    border: 1px solid black;
+    transform: translate(50px, 100px);
+}
+.bola2 {
+    top: calc(50% - 308px);
+    left: 50%;
+    animation: bola2 var(--duracao) linear infinite alternate;
+    transform-origin: 50px 308px;
+}
+.bola2::after {
+    content: '';
+    display: block;
+    height: 200px;
+    width: 1px;
+    border: 1px solid black;
+    transform: translate(50px, 100px);
+}
+@keyframes bola1 {
+    0%{
+        transform: rotateZ(190deg);
+        
+    }
+    100% {
+        transform: rotateZ(350deg);
+    }
+}
+@keyframes bola2 {
+    0%{
+        transform: rotateZ(170deg);
+        
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
+}
