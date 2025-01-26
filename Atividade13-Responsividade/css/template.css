@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+h1 {
+    margin: 0;
+}
+header {
+    background-color: #4e139b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+aside {
+    background-color: #6d1cb3;
+    color: white;
+    text-align: center;
+    width: 25%;
+    float: left;
+}
+main {
+    background-color: aqua;
+    width: 75%;
+    float: left;
+}
+footer {
+    background-color: #4e139b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+
+@media screen and (max-width: 700px) {
+    aside {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    
+}
