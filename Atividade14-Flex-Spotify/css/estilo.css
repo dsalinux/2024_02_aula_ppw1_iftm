@@ -8,6 +8,7 @@ body {
     height: 100vh;
     margin: 0;
     color: white;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
@@ -142,4 +143,82 @@ footer {
     max-width: 100px;
     background-color: rgba(255, 255, 255, 0.15);
     height: 5px;
+}
+
+.playlist {
+    background: linear-gradient(#9b4444, #000000 40%);
+    padding: 10px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.playlist .playlist-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.playlist .playlist-header img {
+    width: 140px;
+}
+.playlist .playlist-header h2 {
+    font-size: 3em;
+}
+.playlist .playlist-header p {
+    font-size: 1.1em;
+}
+.playlist .playlist-info .playlist-short-description {
+    font-size: 0.8em;
+}
+.playlist .playlist-creator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.playlist .playlist-reproducao {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.playlist .playlist-reproducao .playlist-controles {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    align-items: center;
+    font-size: 1.3em;
+}
+.playlist .playlist-reproducao .fa-play {
+    font-size: 30px;
+    background-color: #1ed760;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.playlist .playlist-busca {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.playlist-musicas table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.playlist-musicas table th {
+    height: 3em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.playlist-musicas table th, .playlist-musicas table td {
+    text-align: left;
+    vertical-align: middle;
+    height: 4em;
+}
+
+.playlist-musicas table td img {
+    margin-right: 10px;
 }

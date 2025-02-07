@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Seu Nome</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <a href="cv.pdf" class="btn">Download CV</a>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="container">
+        <h2>Olá, eu sou [Seu Nome]</h2>
+        <p>
+          Desenvolvedor Full Stack | Designer Criativo | Solucionador de
+          Problemas
+        </p>
+        <a href="#projects" class="btn">Ver Meus Projetos</a>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <img src="../image/avatar.png" alt="Foto de Perfil" />
+        <h3>Sobre Mim</h3>
+        <p>
+          Sou apaixonado por tecnologia e design, com experiência em
+          desenvolvimento web, UX/UI e soluções inovadoras.
+        </p>
+        <div class="skills">
+          <span>HTML/CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Figma</span>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <div class="container">
+        <h3>Experiência Profissional</h3>
+        <div class="timeline">
+          <div class="item">
+            <h4>Desenvolvedor Web</h4>
+            <p>Empresa XYZ | Jan 2020 - Dez 2022</p>
+            <p>
+              Responsável pelo desenvolvimento de aplicações web responsivas e
+              otimizadas.
+            </p>
+          </div>
+          <div class="item">
+            <h4>Designer Gráfico</h4>
+            <p>Agência ABC | Jun 2018 - Dez 2019</p>
+            <p>
+              Criação de identidade visual e materiais promocionais para
+              clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <h3>Meus Projetos</h3>
+        <div class="grid">
+          <div class="project">
+            <img src="project1.jpg" alt="Projeto 1" />
+            <h4>Nome do Projeto</h4>
+            <p>Descrição breve do projeto.</p>
+            <a href="https://github.com/seuprojeto" target="_blank"
+              >Ver no GitHub</a
+            >
+          </div>
+          <!-- Repita para outros projetos -->
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h3>Entre em Contato</h3>
+        <form action="submit_form.php" method="POST">
+          <input type="text" name="name" placeholder="Seu Nome" required />
+          <input type="email" name="email" placeholder="Seu Email" required />
+          <textarea
+            name="message"
+            placeholder="Sua Mensagem"
+            required
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/seuperfil"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/seuperfil"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
